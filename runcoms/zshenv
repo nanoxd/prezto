@@ -20,6 +20,11 @@ fi
 export EDITOR='vim'
 export VISUAL='vim'
 export PAGER='less'
+export HOMEBREW_CASK_OPTS="--appdir=/Applications" # Set install location for brew-cask
+export TERM=xterm-256color
+export TMUX_POWERLINE_SEG_WEATHER_LOCATION="2503523"
+export TMUX_POWERLINE_SEG_WEATHER_UNIT='f'
+export TMUX_POWERLINE_SEG_NOW_PLAYING_MUSIC_PLAYER="rdio"
 
 #
 # Language
@@ -28,6 +33,8 @@ export PAGER='less'
 if [[ -z "$LANG" ]]; then
   export LANG='en_US.UTF-8'
 fi
+
+
 
 #
 # Paths
@@ -43,8 +50,15 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
+  /usr/local/share/python
+  /usr/local/share/npm/bin
+  /usr/local/bin/elixir/bin
+  /usr/local/heroku/bin
+  /Applications/Postgres.app/Contents/MacOS/bin
   $path
 )
+
+export GOPATH=$HOME/Developer/Code/go # Google Go Path
 
 #
 # Less

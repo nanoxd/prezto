@@ -17,29 +17,21 @@ fi
 #
 
 alias ror='rails'
-alias rorc='_rails-command console'
-alias rordc='_rails-command dbconsole'
+alias rorc='ror console'
+alias rordc='ror dbconsole'
 alias rordm='rake db:migrate'
 alias rordM='rake db:migrate db:test:clone'
 alias rordr='rake db:rollback'
-alias rorg='_rails-command generate'
+alias rorg='ror generate'
+alias rorgc='rorg controller'
+alias rorgm='rorg model'
+alias rorgmig='rog migration'
 alias rorl='tail -f log/development.log'
 alias rorlc='rake log:clear'
-alias rorp='_rails-command plugin'
-alias rorr='_rails-command runner'
-alias rors='_rails-command server'
-alias rorsd='_rails-command server --debugger'
-alias rorx='_rails-command destroy'
+alias rorp='ror plugin'
+alias rorr='ror routes'
+alias rors='ror server'
+alias rorsd='ror server --debugger'
+alias rorx='ror destroy'
 
-#
-# Functions
-#
-
-function _rails-command {
-  if [[ -e "script/server" ]]; then
-    ruby script/"$@"
-  else
-    ruby script/rails "$@"
-  fi
-}
 

@@ -57,6 +57,10 @@ alias po='popd'
 alias rm="${aliases[rm]:-rm} -i"
 alias type='type -a'
 
+# Custom aliases
+alias st='subl'
+alias ytd='youtube-dl'
+
 # ls
 if is-callable 'dircolors'; then
   # GNU Core Utilities
@@ -177,3 +181,13 @@ function psu {
   ps -U "${1:-$USER}" -o 'pid,%cpu,%mem,command' "${(@)argv[2,-1]}"
 }
 
+# -------------------------------------------------------------------
+# myIP address
+# -------------------------------------------------------------------
+function myip() {
+  ifconfig lo0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "lo0       : " $2}'
+  ifconfig en0 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "en0 (IPv4): " $2 " " $3 " " $4 " " $5 " " $6}'
+  ifconfig en0 | grep 'inet6 ' | sed -e 's/ / /' | awk '{print "en0 (IPv6): " $2 " " $3 " " $4 " " $5 " " $6}'
+  ifconfig en1 | grep 'inet ' | sed -e 's/:/ /' | awk '{print "en1 (IPv4): " $2 " " $3 " " $4 " " $5 " " $6}'
+  ifconfig en1 | grep 'inet6 ' | sed -e 's/ / /' | awk '{print "en1 (IPv6): " $2 " " $3 " " $4 " " $5 " " $6}'
+}

@@ -55,14 +55,3 @@ if zstyle -t ':prezto:environment:termcap' color; then
   export LESS_TERMCAP_ue=$'\E[0m'          # Ends underline.
   export LESS_TERMCAP_us=$'\E[01;32m'      # Begins underline.
 fi
-
-#
-# System
-#
-export EDITOR='vim'
-export LANG="en_US"
-export LC_ALL="en_US.UTF-8"
-export TERM=xterm-256color
-export LESS='-i -r'
-export PAGER='less'
-
