@@ -55,6 +55,7 @@ path=(
   /usr/local/bin/elixir/bin
   /usr/local/heroku/bin
   /Applications/Postgres.app/Contents/MacOS/bin
+  ~/Developer/Code/go/bin
   $path
 )
 
