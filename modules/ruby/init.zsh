@@ -36,6 +36,7 @@ fi
 # General
 alias rb='ruby'
 alias s='rspec'
+alias gi='gem install'
 
 # Bundler
 if (( $+commands[bundle] )); then
