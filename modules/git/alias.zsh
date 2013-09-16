@@ -63,6 +63,7 @@ alias gv='git log --pretty=format:'%s' | cut -d " " -f 1 | sort | uniq -c | sort
 # Merge (m)
 alias gm='git merge'
 alias gmt='git mergetool'
+alias gmb='git merge-branch'
 
 # Push (p)
 alias gp='git push'
