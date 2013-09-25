@@ -30,3 +30,10 @@ function coalesce {
   return 1
 }
 
+
+function sha {
+  for arg in $argv; do
+    shasum "$arg" | cut -d' ' -f1 | pbcopy
+  done
+  return 1
+}
