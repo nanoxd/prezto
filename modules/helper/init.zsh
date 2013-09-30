@@ -33,7 +33,7 @@ function coalesce {
 
 function sha {
   for arg in $argv; do
-    shasum "$arg" | cut -d' ' -f1 | pbcopy
+    shasum "$arg" | cut -s -d' ' -f1 | pbcopy
   done
   return 1
 }
