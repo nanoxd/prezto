@@ -57,7 +57,7 @@ alias ga='git add'
 alias gta='git tag -a -m'
 
 # Log (l)
-alias gl='git log --topo-order --pretty=format:${_git_log_medium_format}'
+alias gl='git lg'
 alias gv='git log --pretty=format:'%s' | cut -d " " -f 1 | sort | uniq -c | sort -nr'
 
 # Merge (m)
