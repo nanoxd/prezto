@@ -68,6 +68,7 @@ alias gmb='git merge-branch'
 # Push (p)
 alias gp='git push'
 alias gphm='git push heroku master'
+alias gphb='git push && hub browse'
 alias gpt='git push --tags'
 alias gpc='git push --set-upstream origin "$(git-branch-current 2> /dev/null)"'
 alias gpp='git pull origin "$(git-branch-current 2> /dev/null)" && git push origin "$(git-branch-current 2> /dev/null)"'
