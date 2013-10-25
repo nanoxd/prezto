@@ -1,3 +1,5 @@
+setopt EXTENDED_GLOB
+
 echo "\033[0;34mCloning Prezto\033[0m"
 hash git >/dev/null && /usr/bin/env git clone --recursive https://github.com/NanoXD/prezto.git ~/.zprezto || {
   echo "git not installed"
