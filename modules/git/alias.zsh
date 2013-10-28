@@ -28,7 +28,8 @@ zstyle -s ':prezto:module:git:status:ignore' submodules '_git_status_ignore_subm
 
 # Git
 alias g='git'
-alias gd='git difftool'
+alias gd='git diff'
+alias gdc='git diff --cached'
 alias gs='git status -sb'
 
 
@@ -54,6 +55,7 @@ alias gpu='git pull'
 
 # Index (i)
 alias ga='git add'
+alias gaa='git add --all'
 alias gta='git tag -a -m'
 
 # Log (l)
@@ -96,3 +98,7 @@ alias gSx='git-submodule-remove'
 alias hb='hub browse'
 alias hc='hub create'
 alias hpr='hub pull-request'
+
+# Git Extras
+alias gF='git feature'
+alias gFf='git feature finish'
