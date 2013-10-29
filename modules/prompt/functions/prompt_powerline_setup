@@ -60,14 +60,15 @@ function time_since_commit() {
   fi
 }
 
-function rvm_info_for_prompt {
-  if [[ -d ~/.rvm/ ]]; then
-    local ruby_version=$(~/.rvm/bin/rvm-prompt)
-    if [ -n "$ruby_version" ]; then
-      echo "$ruby_version"
-    fi
-  else
-    echo ""
+ruby_version() {
+  if (( $+commands[rbenv] ))
+  then
+    echo "$(rbenv version | awk '{print $1}')"
+  fi
+
+  if (( $+commands[rvm-prompt] ))
+  then
+    echo "$(rvm-prompt | awk '{print $1}')"
   fi
 }
 
@@ -82,8 +83,8 @@ function prompt_powerline_precmd {
   zstyle ':vcs_info:*:prompt:*' formats "${fmt_branch}"
 
   vcs_info 'prompt'
+
   RVM_PRECMD_INFO=$(rvm_info_for_prompt)
-  zstyle ':prezto:module:ruby' rvm '%r'
 }
 
 function prompt_powerline_setup {
@@ -121,9 +122,6 @@ function prompt_powerline_setup {
   # check-for-changes can be really slow.
   # You should disable it if you work with large repositories.
   zstyle ':vcs_info:*:prompt:*' check-for-changes true
-
-  # ruby info (rvm, rbenv)
-  zstyle ':prezto:module:ruby:info:version' format '[%v]'
 
   # Formats:
   # %b - branchname
