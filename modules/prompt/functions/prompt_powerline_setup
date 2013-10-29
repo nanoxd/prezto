@@ -71,8 +71,6 @@ function time_since_commit() {
 #   fi
 # }
 
-# ruby info (rvm, rbenv)
-zstyle ':prezto:module:ruby:info:version' format '[%v]'
 
 function prompt_powerline_precmd {
   # Check for untracked files or updated submodules since vcs_info doesn't.
@@ -127,6 +125,9 @@ function prompt_powerline_setup {
   # check-for-changes can be really slow.
   # You should disable it if you work with large repositories.
   zstyle ':vcs_info:*:prompt:*' check-for-changes true
+
+  # ruby info (rvm, rbenv)
+  zstyle ':prezto:module:ruby:info:version' format '[%v]'
 
   # Formats:
   # %b - branchname
