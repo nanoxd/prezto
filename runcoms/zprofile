@@ -38,6 +38,7 @@ export RUBY_GC_MALLOC_LIMIT=90000000
 # Paths
 #
 
+# Ensure path arrays do not contain duplicates.
 typeset -gU cdpath fpath mailpath path
 
 # Set the the list of directories that cd searches.
