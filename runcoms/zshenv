@@ -7,7 +7,7 @@
 
 export HOMEBREW_CASK_OPTS="--appdir=/Applications" # Set install location for brew-cask
 export TERM=xterm-256color
-export TMUX_POWERLINE_SEG_WEATHER_LOCATION="2503523"
+export TMUX_POWERLINE_SEG_WEATHER_LOCATION="2490383"
 export TMUX_POWERLINE_SEG_WEATHER_UNIT='f'
 export TMUX_POWERLINE_SEG_NOW_PLAYING_MUSIC_PLAYER="rdio"
 
