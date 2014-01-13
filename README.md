@@ -36,7 +36,7 @@ version is 4.3.11.
 ### Troubleshooting
 
 If you are not able to find certain commands after switching to *Prezto*,
-modify the `PATH` variable in *~/.zshenv* then open a new Zsh terminal
+modify the `PATH` variable in *~/.zprofile* then open a new Zsh terminal
 window or tab.
 
 Usage
