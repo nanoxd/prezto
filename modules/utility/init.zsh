@@ -108,6 +108,10 @@ alias sl='ls'            # I often screw this up.
 if [[ "$OSTYPE" == darwin* ]]; then
   alias o='open'
   alias get='curl --continue-at - --location --progress-bar --remote-name --remote-time'
+elif [[ "$OSTYPE" == cygwin* ]]; then
+  alias o='cygstart'
+  alias pbcopy='tee > /dev/clipboard'
+  alias pbpaste='cat /dev/clipboard'
 else
   alias o='xdg-open'
   alias get='wget --continue --progress=bar --timestamping'
