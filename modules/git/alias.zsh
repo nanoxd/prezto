@@ -51,7 +51,7 @@ alias gcp='git cherry-pick --ff'
 alias gf='git fetch'
 alias gfum='git fetch upstream && git merge upstream/master'
 alias gcl='git clone'
-alias gpu='git pull'
+alias gpu='git pull --rebase'
 
 # Index (i)
 alias ga='git add'
@@ -98,7 +98,3 @@ alias gSx='git-submodule-remove'
 alias hb='hub browse'
 alias hc='hub create'
 alias hpr='hub pull-request'
-
-# Git Extras
-alias gF='git feature'
-alias gFf='git feature finish'
