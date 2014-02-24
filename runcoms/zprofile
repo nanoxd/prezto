@@ -57,6 +57,7 @@ path=(
   /usr/local/heroku/bin
   /Applications/Postgres.app/Contents/MacOS/bin
   ~/Developer/Code/go/bin
+  ~/Developer/Code/nanofiles/tmuxifier/bin
   $path
 )
 
