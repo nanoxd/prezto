@@ -14,3 +14,6 @@ fi
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 eval "$(tmuxifier init -)"
+
+# Tmuxifier layouts
+export TMUXIFIER_LAYOUT_PATH="$HOME/Developer/Code/nanofiles/tmux-layouts"
