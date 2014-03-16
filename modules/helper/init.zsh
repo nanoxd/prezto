@@ -37,3 +37,9 @@ function sha {
   done
   return 1
 }
+
+function change-extension() {
+  foreach f (**/*.$1)
+    mv $f $f:r.$2
+  end
+}
