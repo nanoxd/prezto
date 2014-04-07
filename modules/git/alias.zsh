@@ -93,8 +93,3 @@ alias gSm='git-submodule-move'
 alias gSs='git submodule sync'
 alias gSu='git submodule foreach git pull origin master'
 alias gSx='git-submodule-remove'
-
-# Hub
-alias hb='hub browse'
-alias hc='hub create'
-alias hpr='hub pull-request'
