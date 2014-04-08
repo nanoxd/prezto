@@ -17,4 +17,7 @@ echo "\033[0;33mSymlinking files from ~/.zprezto\033[0m";
 for rcfile in "${ZDOTDIR:-$HOME}"/.zprezto/runcoms/^README.md(.N); do
   ln -s "$rcfile" "${ZDOTDIR:-$HOME}/.${rcfile:t}"
 done
+
+echo "\033[0;33mSymlinking submodules for Prezto\033[0m";
+ln -s ~/.zprezto/submodules/pure_prompt/pure.zsh ~/.zprezto/modules/prompt/functions/prompt_pure_setup
 source ~/.zshrc
