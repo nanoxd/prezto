@@ -10,3 +10,6 @@
 [submodule "submodules/pure_prompt"]
 	path = submodules/pure_prompt
 	url = git@github.com:sindresorhus/pure.git
+[submodule "submodules/k"]
+	path = submodules/k
+	url = git@github.com:supercrabtree/k.git
