@@ -62,8 +62,6 @@ path=(
 )
 
 export GOPATH=$HOME/Developer/Code/go # Google Go Path
-export VAGRANT_HOME=/Volumes/SSD/.vagrant
-export VAGRANT_VMWARE_CLONE_DIRECTORY=/Volumes/SSD/.vagrant/vmware_clone_dir
 
 #
 # Less
