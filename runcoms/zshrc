@@ -17,3 +17,4 @@ eval "$(tmuxifier init -)"
 
 # Tmuxifier layouts
 export TMUXIFIER_LAYOUT_PATH="$HOME/Developer/Code/nanofiles/tmux-layouts"
+source ~/.zprezto/submodules/k/k.sh
