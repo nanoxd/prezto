@@ -41,4 +41,3 @@ fi
 
 alias tmuxa='tmux attach-session'
 alias tmuxl='tmux list-sessions'
-alias t='teamocil'
