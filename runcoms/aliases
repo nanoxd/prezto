@@ -1,2 +1,5 @@
 ## Vagrant
 alias vagup="vagrant up --provider=vmware_fusion"
+
+## Tmux
+alias t="tmuxifier"
