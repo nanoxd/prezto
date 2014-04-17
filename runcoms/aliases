@@ -1,5 +1,9 @@
 ## Vagrant
+alias vag="vagrant"
 alias vagup="vagrant up --provider=vmware_fusion"
 
 ## Tmux
 alias t="tmuxifier"
+
+## Git
+alias delete-merged-branches="git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"

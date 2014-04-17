@@ -49,8 +49,6 @@ fi
 alias rb='ruby'
 alias s='rspec'
 alias gi='gem install'
-alias c='cucumber'
-alias vag="vagrant"
 
 # Bundler
 if (( $+commands[bundle] )); then

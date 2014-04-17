@@ -38,7 +38,6 @@ alias gb='git branch'
 alias gbc='git checkout -b'
 alias gbs='git show-branch'
 alias gcb='git create-branch'
-alias delete-merged-branches="git co master && git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
 
 # Commit (c)
 alias gc='git commit --verbose'
