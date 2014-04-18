@@ -23,4 +23,5 @@ export VAGRANT_HOME=/Volumes/SSD/.vagrant
 export VAGRANT_VMWARE_CLONE_DIRECTORY=/Volumes/SSD/.vagrant/vmware_clone_dir
 
 source ~/.zprezto/submodules/k/k.sh
+source `brew --prefix`/etc/profile.d/z.sh
 source ~/.aliases
